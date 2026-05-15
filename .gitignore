@@ -1,0 +1,4 @@
+.qodo/
+.sixth/
+__pycache__/
+*.pyc

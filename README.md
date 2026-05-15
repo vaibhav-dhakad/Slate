@@ -18,6 +18,9 @@ If you use `Gedit`, `Nano`, or `GNOME Text Editor` for taking quick notes, you p
 * **🪟 Two-Pane Workflow:** A modern, Notion-like layout with a persistent sidebar. Switch between notes instantly without opening multiple overlapping windows.
 * **🪶 Feather-light:** Unlike Electron-based apps (Obsidian, VS Code) that eat up RAM, Slate uses pure Python `tkinter`. It opens instantly and consumes almost zero system resources.
 
+<img width="1855" height="1051" alt="image" src="https://github.com/user-attachments/assets/faf212a5-3f43-46ac-8da0-fed79b9780da" />
+
+
 ---
 
 ## 🛠️ Prerequisites

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Noted — matches screenshot UI
+Slate — matches screenshot UI
 Run: python3 Notepad.py
 Deps: sudo apt install python3-tk
 """
@@ -10,7 +10,7 @@ from tkinter import messagebox
 import json, os
 from datetime import datetime
 
-DATA = os.path.expanduser("~/.noted.json")
+DATA = os.path.expanduser("~/.Slate.json")
 
 # ── Colours ─────────────────────────────────────────────────────
 SB_BG        = "#1e2535"
@@ -57,7 +57,7 @@ def parse_font(fnt):
 class App:
     def __init__(self, root):
         self.root      = root
-        self.root.title("Noted")
+        self.root.title("Slate")
         self.root.geometry("1060x620")
         self.root.minsize(800, 500)
         self.root.configure(bg=TOP_BG)
@@ -83,7 +83,7 @@ class App:
         top.pack(fill="x")
         top.pack_propagate(False)
 
-        tk.Label(top, text="🗒  Noted", bg=TOP_BG, fg=ACCENT_PUR,
+        tk.Label(top, text="🗒  Slate", bg=TOP_BG, fg=ACCENT_PUR,
                  font=("Georgia", 13, "bold")).pack(side="left", padx=16, pady=12)
 
         btn_f = tk.Frame(top, bg=TOP_BG)
@@ -288,11 +288,6 @@ class App:
         self.wc = tk.Label(bb, text="", bg=TB_BG, fg=TEXT_DATE,
                            font=("Segoe UI", 8))
         self.wc.pack(side="bottom", pady=8)
-
-        # Sparkle ✦ bottom-right
-        tk.Label(ed, text="✦", bg=ED_BG, fg="#3a3530",
-                 font=("Georgia", 32)).place(relx=1.0, rely=1.0,
-                                             anchor="se", x=-16, y=-8)
 
         self._editor_on(False)
 
